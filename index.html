@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haymanot - personal portfolio</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+    <style>
+      .skills {
+  background: radial-gradient(#e1efff, white);
+}
+.skills .title::after {
+  content: "—What I Know ?_";
+}
+
+.skills .skills-content .column {
+  width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills .skills-content .left p {
+  text-align: justify;
+}
+
+.skills .skills-content .left a {
+  display: inline-block;
+  background: #1e3551;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #1e3551;
+  transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover {
+  color: #1e3551;
+  background: none;
+  animation: pulsate 1s ease-in-out;
+}
+
+.intern,
+.project {
+  list-style: none;
+}
+
+.intern::before,
+.project::before {
+  content: "✪ ";
+  color: #1e3551;
+}
+
+.skills .skills-content .right .bars {
+  margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+.skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #1e3551;
+}
+
+.skills-content .right .php::before {
+  width: 50%;
+}
+
+.skills-content .right .html::before {
+  width: 80%;
+}
+
+.skills-content .right .css::before {
+  width: 60%;
+}
+
+.skills-content .right .js::before {
+  width: 40%;
+}
+
+.skills-content .right .c::before {
+  width: 60%;
+}
+
+.skills-content .right .mysql::before {
+  width: 70%;
+}
+    </style>
+</head>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Haymanot<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <select name="language" id="lang">
+          <option value="en">En</option>
+          <option value="ar">Ar</option>
+        </select>
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home.</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About.</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">Skills.</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">Portfolio.</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact.</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+
+          <picture>
+        
+            <img src="wub.jpg" alt="A man in a blue shirt with a happy expression"
+              class="w-100">
+          </picture>
+
+        </figure>
+
+        <div class="hero-content">
+
+          <h2 class="h2 hero-title">Hi!,I'm Haymanot Sewbihon</h2>
+
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+
+        </div>
+
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+
+              <div class="tooltip">Twitter</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                 <strong>   Experience</strong>
+              </h2>
+ 
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                 <strong>Completed Projects</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                95+ <strong>Happy Clients</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="hami.jpg" alt="A man in a alice blue shirt with a thinking expression"
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">About me</p>
+
+          <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
+
+          <p class="section-text">
+           I born in 1994 msrak shewa zone in mojo city.I started to attended Education in mojo  primary and  secondary school.<br>
+            After I will taken enterance exam and I get the chance to studied in Jnka unversity. now I'm 3rd year computer science student.
+            After I studied some Programming language and web developing courses.I will get skills and Experience.I started to develope website.
+            
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-secondary">Hire me</button>
+
+            <button class="btn btn-primary">Download cv</button>
+          </div>
+
+        </div>
+
+      </section>
+  
+            <!-- 
+              - #SKILLS
+            -->
+      
+            <section class="skills" id="skills">
+              <div class="max-width">
+                <br>
+                <h2 class="title">    My Skills <br></h2>
+                <br>
+                <div class="skills-content">
+                  <div class="column left">
+                    <br>
+                    <br>
+                    <br>
+                    <div class="text">DEVELOPMENT SKILLS</div>
+                      I'm familiar & work on a daily basis with HTML, CSS, JavaScript, PHP, C++  and other modern frameworks.
+                    </p>
+                    <a href="https://www.google.com/search?sca_esv=dcfe5edb8f188ebf&rlz=1C1KNTJ_enET1090ET1090&q=jku+photo&tbm=isch&chips=q:jku+photo,online_chips:jinka+university:i7_Fcq8T1qU%3D&usg=AI4_-kQyvC0lGSZc1W4MaUZDfp20a6aa1A&sa=X&ved=2ahUKEwjt4POLwL6EAxWMh_0HHdjtD3EQgIoDKAJ6BAgPEBg" target="blank">Get Educate...</a>
+                  </div>
+                  <div class="column right">
+                    <div class="bars">
+                      <div class="info">
+                        <span>PHP</span>
+                        <span>50%</span>
+                      </div>
+                      <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                      <div class="info">
+                        <span>HTML</span>
+                        <span>80%</span>
+                      </div>
+                      <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                      <div class="info">
+                        <span>CSS</span>
+                        <span>60%</span>
+                      </div>
+                      <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                      <div class="info">
+                        <span>JavaScript</span>
+                        <span>40%</span>
+                      </div>
+                      <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                      <div class="info">
+                        <span>C</span>
+                        <span>60%</span>
+                      </div>
+                      <div class="line c"></div>
+                    </div>
+                    <div class="bars">
+                      <div class="info">
+                        <span>Mysql</span>
+                        <span>70%</span>
+                      </div>
+                      <div class="line mysql"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title">Have You Any Project? Please Drop a Message</h2>
+          Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+          <p class="section-text">
+            
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+               
+                <address class="contact-info">
+                 
+                </address>
+           
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel: " class="contact-info"> 09682525--</a>
+ 
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:haymanotsewbihon@gmail.com" class="contact-info">haymanotsewbihon@gmail.com</a>
+
+                <a href="mailto:support@haymanot.com" class="contact-info">support@haymanot.com</a>
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
+
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Twitter</div>
+
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Linkedin</div>
+
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Youtube</div>
+
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="mailto:haymanotsewbihon@gmail.com" class="contact-form">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="e.g Liya Mesfn " class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g  Liya@mail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Write message..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          haymi<span>.</span>
+        </a>
+      </p>
+
+     
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
